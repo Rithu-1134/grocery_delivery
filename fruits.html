@@ -1,0 +1,451 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits and Vegetables - Grand Grocer</title>
+    <link rel="icon" href="images/cart.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 style="font-style: italic;">Grand Grocer</h1>
+        <div class="nav-icons">
+            <a href="#wishlistPage" class="wishlist">Wishlist
+                <i class="fas fa-heart"></i>
+            </a>
+            <a href="#cartPage" class="cart">Cart
+                <i class="fas fa-shopping-basket"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container" id="itemsPage">
+        <h1>Fruits and Vegetables</h1>
+        <div class="items">
+            <div class="item">
+                <img src="images/fruits/apple.jpg" alt="Apple">
+                <div class="info">
+                    <h2>Apple</h2>
+                    <p>₹180 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Apple', 180)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Apple', 180)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/banana.jpg" alt="Banana">
+                <div class="info">
+                    <h2>Banana</h2>
+                    <p>₹85 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Banana', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Banana', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/guava.jpg" alt="Banana">
+                <div class="info">
+                    <h2Guava</h2>
+                    <p>₹90 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'guava', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('guava', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/onion.jpg" alt="Banana">
+                <div class="info">
+                    <h2>onion</h2>
+                    <p>₹50 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'onion', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('onion', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/oranges.jpg" alt="Orange">
+                <div class="info">
+                    <h2>Orange</h2>
+                    <p>₹100 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Orange', 100)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Orange', 100)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/b grapes.jpg" alt="Grapes">
+                <div class="info">
+                    <h2>Black Grapes</h2>
+                    <p>₹110 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Black Grapes', 110)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Black Grapes', 110)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/g grapes.jpg" alt="Grapes">
+                <div class="info">
+                    <h2>Green Grapes</h2>
+                    <p>₹120 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Green Grapes', 120)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Green Grapes', 120)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/chily.jpg" alt="chily">
+                <div class="info">
+                    <h2>chily</h2>
+                    <p>₹100 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'chily', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('chily', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/garlic.jpg" alt="Garlic">
+                <div class="info">
+                    <h2>Garlic</h2>
+                    <p>₹90 300g</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Garlic', 250)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Garlic', 250)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/ladysfinger.png" alt="Lady's Finger">
+                <div class="info">
+                    <h2>Lady's Finger</h2>
+                    <p>₹120 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Lady\'s Finger', 120)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Lady\'s Finger', 120)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/kiwi.jpg" alt="kiwi">
+                <div class="info">
+                    <h2>kiwi</h2>
+                    <p>₹200 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'kiwi', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('kiwi', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/eggplant.jpg" alt="eggplant">
+                <div class="info">
+                    <h2>eggplant</h2>
+                    <p>₹80 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'eggplant', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('eggplant', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/ginger.jpg" alt="Ginger">
+                <div class="info">
+                    <h2>Ginger</h2>
+                    <p>₹100 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Ginger', 100)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Ginger', 100)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/carrot.jpg" alt="Carrot">
+                <div class="info">
+                    <h2>Carrot</h2>
+                    <p>₹80 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Carrot', 80)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Carrot', 80)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/tomato.jpg" alt="Tomato">
+                <div class="info">
+                    <h2>Tomato</h2>
+                    <p>₹70 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Tomato', 70)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Tomato', 70)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/potato.jpg" alt="Potato">
+                <div class="info">
+                    <h2>Potato</h2>
+                    <p>₹60 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Potato', 60)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Potato', 60)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/strawberry.jpg" alt="strawberry">
+                <div class="info">
+                    <h2>Strawberry</h2>
+                    <p>₹80 per 300g</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Strawberry', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Strawberry', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/mango.jpg" alt="Mango">
+                <div class="info">
+                    <h2>Mango</h2>
+                    <p>₹100 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Mango', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Mango', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/papaya.jpg" alt="Papaya">
+                <div class="info">
+                    <h2>Papaya</h2>
+                    <p>₹60 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Papaya', 60)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Papaya', 60)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/coriander.jpg" alt="coriander">
+                <div class="info">
+                    <h2>coriander</h2>
+                    <p>₹100 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'coriander', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('coriander', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/pomo.jpg" alt="Pomegranate">
+                <div class="info">
+                    <h2>Pomegranate</h2>
+                    <p>₹160 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Pomegranate', 160)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Pomegranate', 160)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/spinach.jpg" alt="Spinach">
+                <div class="info">
+                    <h2>Spinach</h2>
+                    <p>₹50 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Spinach', 50)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Spinach', 50)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/ginger.jpg" alt="ginger">
+                <div class="info">
+                    <h2>Ginger</h2>
+                    <p>₹80 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Mint', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Mint', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/fruits/mint.jpg" alt="Banana">
+                <div class="info">
+                    <h2>mint</h2>
+                    <p>₹80 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Mint', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Mint', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <div class="container hidden" id="wishlistPage">
+        <h1>Wishlist</h1>
+        <div class="items" id="wishlistItems">
+            <!-- Wishlist items will be added here -->
+        </div>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <div class="container hidden" id="cartPage">
+        <h1>Cart</h1>
+        <div class="items" id="cartItems">
+            <!-- Cart items will be added here -->
+        </div>
+        <div id="userDetails" class="hidden">
+            <h2>Enter your details</h2>
+            <form onsubmit="confirmOrder(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" required onchange="toggleUPI(this.value)">
+                    <option value="">Select Payment Method</option>
+                    <option value="online">Online Payment</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+                <div id="upiSection" class="hidden">
+                    <label for="upiId">UPI ID:</label>
+                    <input type="text" id="upiId" name="upiId">
+                </div>
+                <button type="submit">Confirm Order</button>
+            </form>
+        </div>
+        <div id="billDetails" class="hidden">
+            <h2>Bill Details</h2>
+            <p id="totalBill">Total Bill: ₹0</p>
+        </div>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <div class="container hidden" id="orderConfirmationPage">
+        <h1>Order Confirmation</h1>
+        <p id="orderSummary">Your order has been placed successfully.</p>
+        <p>Thank you for shopping with Grand Grocer!</p>
+        <p style="text-align:center;">Visit Again!</p>
+    </div>
+
+    <script>
+        const wishlist = [];
+        const cart = [];
+        let totalBill = 0;
+
+        function toggleHeart(element, itemName, price) {
+            element.classList.toggle('favorite');
+            if (element.classList.contains('favorite')) {
+                wishlist.push({ name: itemName, price: price });
+            } else {
+                const index = wishlist.findIndex(item => item.name === itemName);
+                if (index !== -1) wishlist.splice(index, 1);
+            }
+            updateWishlist();
+        }
+
+        function addToCart(itemName, price) {
+            const quantity = prompt(`Enter quantity for ${itemName} (in kg):`, 1);
+            if (quantity !== null && quantity > 0) {
+                alert(`${quantity} kg of ${itemName} added to cart!`);
+                cart.push({ name: itemName, price: price, quantity: quantity });
+                updateCart();
+            }
+        }
+
+        function updateWishlist() {
+            const wishlistItems = document.getElementById('wishlistItems');
+            wishlistItems.innerHTML = '';
+            wishlist.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'item';
+                div.innerHTML = `<h2>${item.name}</h2><p>₹${item.price} per kg</p>`;
+                wishlistItems.appendChild(div);
+            });
+        }
+
+        function updateCart() {
+            const cartItems = document.getElementById('cartItems');
+            cartItems.innerHTML = '';
+            totalBill = 0;
+            cart.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'item';
+                div.innerHTML = `<h2>${item.name}</h2><p>₹${item.price} per kg</p><p>Quantity: ${item.quantity} kg</p>`;
+                cartItems.appendChild(div);
+                totalBill += item.price * item.quantity;
+            });
+            document.getElementById('totalBill').innerText = `Total Bill: ₹${totalBill}`;
+            document.getElementById('billDetails').classList.remove('hidden');
+            document.getElementById('userDetails').classList.remove('hidden');
+        }
+
+        function goBack() {
+            document.getElementById('wishlistPage').classList.add('hidden');
+            document.getElementById('cartPage').classList.add('hidden');
+            document.getElementById('itemsPage').classList.remove('hidden');
+            document.getElementById('orderConfirmationPage').classList.add('hidden');
+        }
+
+        function toggleUPI(paymentMethod) {
+            if (paymentMethod === 'online') {
+                document.getElementById('upiSection').classList.remove('hidden');
+            } else {
+                document.getElementById('upiSection').classList.add('hidden');
+            }
+        }
+
+        function confirmOrder(event) {
+            event.preventDefault();
+            const name = event.target.name.value;
+            const address = event.target.address.value;
+            const paymentMethod = event.target.paymentMethod.value;
+            const upiId = event.target.upiId ? event.target.upiId.value : '';
+
+            let finalBill = totalBill;
+            if (paymentMethod === 'cod') {
+                finalBill += 40; // Adding ₹40 for Cash on Delivery
+            }
+
+            let paymentConfirmation = '';
+            if (paymentMethod === 'online' && upiId) {
+                paymentConfirmation = 'Paid successfully using UPI ID: ' + upiId;
+            } else {
+                paymentConfirmation = 'Cash on Delivery';
+            }
+
+            alert(`Order confirmed! Name: ${name}, Address: ${address}. ${paymentConfirmation}. Total Bill: ₹${finalBill}. Expected delivery in 2 hours.`);
+            document.getElementById('orderSummary').innerText = `Order confirmed! Name: ${name}, Address: ${address}. ${paymentConfirmation}. Total Bill: ₹${finalBill}. Expected delivery in 2 hours.`;
+            document.getElementById('orderConfirmationPage').classList.remove('hidden');
+            document.getElementById('cartPage').classList.add('hidden');
+        }
+
+        document.querySelector('.wishlist').addEventListener('click', () => {
+            document.getElementById('wishlistPage').classList.remove('hidden');
+            document.getElementById('itemsPage').classList.add('hidden');
+            document.getElementById('cartPage').classList.add('hidden');
+        });
+
+        document.querySelector('.cart').addEventListener('click', () => {
+            document.getElementById('cartPage').classList.remove('hidden');
+            document.getElementById('itemsPage').classList.add('hidden');
+            document.getElementById('wishlistPage').classList.add('hidden');
+        });
+    </script>
+</body>
+
+</html>

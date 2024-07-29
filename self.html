@@ -1,0 +1,552 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits and Vegetables - Grand Grocer</title>
+    <link rel="icon" href="images/cart.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 style="font-style: italic;">Grand Grocer</h1>
+        <div class="nav-icons">
+            <a href="#wishlistPage" class="wishlist">Wishlist
+                <i class="fas fa-heart"></i>
+            </a>
+            <a href="#cartPage" class="cart">Cart
+                <i class="fas fa-shopping-basket"></i>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container" id="itemsPage">
+        <h1>Beauty products</h1>
+        <div class="items">
+            <div class="item">
+                <img src="images/self/Bella Vita Luxury CEO MAN Body Wash Refreshing Shower Gel.jpg" alt="Bella Vita Luxury CEO MAN Body Wash Refreshing Shower Gel">
+                <div class="info">
+                    <h2>Bella Vita Luxury CEO MAN Body Wash Refreshing Shower Gel</h2>
+                    <p>₹740 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Bella Vita Luxury CEO MAN Body Wash Refreshing Shower Gel', 180)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Bella Vita Luxury CEO MAN Body Wash Refreshing Shower Gel', 180)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Biotique Onion Black Seed Shampoo For Fresh, Strong and Shining Hair, 300 ml.jpg" alt="Biotique Onion Black Seed Shampoo For Fresh, Strong and Shining Hair, 300 ml">
+                <div class="info">
+                    <h2>Biotique Onion Black Seed Shampoo For Fresh, Strong and Shining Hair, 300 ml</h2>
+                    <p>₹100 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Biotique Onion Black Seed Shampoo For Fresh, Strong and Shining Hair, 300 ml', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Biotique Onion Black Seed Shampoo For Fresh, Strong and Shining Hair, 300 ml', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Caresmith Spark Z Electric Toothbrush.jpg" alt="Caresmith Spark Z Electric Toothbrush">
+                <div class="info">
+                    <h2> Caresmith Spark Z Electric Toothbrush</h2>
+                    <p>₹160 per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Caresmith Spark Z Electric Toothbrush', 160)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Caresmith Spark Z Electric Toothbrush', 160)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Cinthol Cool Soap.jpg" alt="Cinthol Cool Soap">
+                <div class="info">
+                    <h2>Cinthol Cool Soap</h2>
+                    <p>₹200</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Cinthol Cool Soap', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Cinthol Cool Soap', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Clinic Plus Strong & Long Shampoo 1 L.jpg" alt="clinic Plus Strong & Long Shampoo 1 L">
+                <div class="info">
+                    <h2>clinic Plus Strong & Long Shampoo 1 L</h2>
+                    <p>₹800</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'clinic Plus Strong & Long Shampoo 1 L', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('clinic Plus Strong & Long Shampoo 1 L', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Closeup Toothpaste.jpg" alt="Closeup Toothpaste">
+                <div class="info">
+                    <h2>Closeup Toothpaste</h2>
+                    <p>₹990</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Closeup Toothpaste', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Closeup Toothpaste', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Col-gate Slimsoft Charcoal Manual Toothbrush.jpg" alt="Col-gate Slimsoft Charcoal Manual Toothbrush">
+                <div class="info">
+                    <h2>Col-gate Slimsoft Charcoal Manual Toothbrush</h2>
+                    <p>₹260</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Col-gate Slimsoft Charcoal Manual Toothbrush', 100)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Col-gate Slimsoft Charcoal Manual Toothbrush', 100)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Colgate Gentle Toothbrush UltraFoam.jpg" alt="Colgate Gentle Toothbrush UltraFoam">
+                <div class="info">
+                    <h2>Colgate Gentle Toothbrush UltraFoam</h2>
+                    <p>₹110 </p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Colgate Gentle Toothbrush UltraFoam', 110)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Colgate Gentle Toothbrush UltraFoam', 110)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/colgate salt.jpg" alt="colgate salt">
+                <div class="info">
+                    <h2>colgate salt</h2>
+                    <p>₹220</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'colgate salt', 120)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('colgate salt', 120)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Colgate visible white.jpg" alt="Colgate visible white">
+                <div class="info">
+                    <h2>Colgate visible white</h2>
+                    <p>₹1230</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Colgate visible white', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Colgate visible white', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Colgate ZigZag Medium Bristle Toothbrush Combo Pack Offer - 6 Pcs.jpg" alt="Colgate ZigZag Medium Bristle Toothbrush Combo Pack Offer - 6 Pcs">
+                <div class="info">
+                    <h2>Colgate ZigZag Medium Bristle Toothbrush Combo Pack Offer - 6 Pcs</h2>
+                    <p>₹120</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Colgate ZigZag Medium Bristle Toothbrush Combo Pack Offer - 6 Pcs', 250)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Colgate ZigZag Medium Bristle Toothbrush Combo Pack Offer - 6 Pcs', 250)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Dabur Red Gel Ayurvedic Toothpaste - 300g.jpg" alt="Dabur Red Gel Ayurvedic Toothpaste - 300g">
+                <div class="info">
+                    <h2>Dabur Red Gel Ayurvedic Toothpaste - 300g</h2>
+                    <p>₹120 </p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Dabur Red Gel Ayurvedic Toothpaste - 300g', 120)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Dabur Red Gel Ayurvedic Toothpaste - 300g', 120)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Dabur Vatika Health Shampoo - 640ml.jpg" alt="Dabur Vatika Health Shampoo - 640ml">
+                <div class="info">
+                    <h2>Dabur Vatika Health Shampoo - 640ml</h2>
+                    <p>₹210 </p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Dabur Vatika Health Shampoo - 640ml', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Dabur Vatika Health Shampoo - 640ml', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Dove Cream Beauty Bathing Bar.jpg" alt="Dove Cream Beauty Bathing Bar">
+                <div class="info">
+                    <h2>Dove Cream Beauty Bathing Bar</h2>
+                    <p>₹180</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Dove Cream Beauty Bathing Bar', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Dove Cream Beauty Bathing Bar', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Dove Intense Repair Shampoo 1 L,.jpg" alt="Dove Intense Repair Shampoo 1 L">
+                <div class="info">
+                    <h2>Dove Intense Repair Shampoo 1 L</h2>
+                    <p>₹129</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Dove Intense Repair Shampoo 1 L', 100)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Dove Intense Repair Shampoo 1 L', 100)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/dove shampoo.jpg" alt="dove shampoo">
+                <div class="info">
+                    <h2>dove shampoo</h2>
+                    <p>₹320</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'dove shampoo', 80)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('dove shampoo', 80)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Head & Shoulders Smooth and Silky, Anti Dandruff Shampoo for Women & Men , 1 L.jpg" alt="Head & Shoulders Smooth and Silky, Anti Dandruff Shampoo for Women & Men , 1 L">
+                <div class="info">
+                    <h2>Head & Shoulders Smooth and Silky, Anti Dandruff Shampoo for Women & Men , 1 L</h2>
+                    <p>₹340per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Head & Shoulders Smooth and Silky, Anti Dandruff Shampoo for Women & Men , 1 L', 70)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Head & Shoulders Smooth and Silky, Anti Dandruff Shampoo for Women & Men , 1 L', 70)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Himalaya Gentle Daily Care Natural Protein Shampoo.jpg" alt="Himalaya Gentle Daily Care Natural Protein Shampoo">
+                <div class="info">
+                    <h2>Himalaya Gentle Daily Care Natural Protein Shampoo</h2>
+                    <p>₹120</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Himalaya Gentle Daily Care Natural Protein Shampoo', 60)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Himalaya Gentle Daily Care Natural Protein Shampoo', 60)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/L'Oreal Paris Shampoo.jpg" alt="L'Oreal Paris Shampoo">
+                <div class="info">
+                    <h2>L'Oreal Paris Shampoo</h2>
+                    <p>₹127</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'LOreal Paris Shampoo', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('LOreal Paris Shampoo', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/L'OREAL PROFESSIONNEL PARIS Absolut Repair Shampoo For Damaged & Weakend Hair, 300ML.jpg" alt="L'OREAL PROFESSIONNEL PARIS Absolut Repair Shampoo For Damaged & Weakend Hair, 300ML">
+                <div class="info">
+                    <h2>L'OREAL PROFESSIONNEL PARIS Absolut Repair Shampoo For Damaged & Weakend Hair, 300ML</h2>
+                    <p>₹145</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'LOREAL PROFESSIONNEL PARIS Absolut Repair Shampoo For Damaged & Weakend Hair, 300ML', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('LOREAL PROFESSIONNEL PARIS Absolut Repair Shampoo For Damaged & Weakend Hair, 300ML', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Lux Body Wash Fragrant Skin Black Orchid Scent.jpg" alt="Lux Body Wash Fragrant Skin Black Orchid Scent">
+                <div class="info">
+                    <h2>Lux Body Wash Fragrant Skin Black Orchid Scent</h2>
+                    <p>₹880</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Lux Body Wash Fragrant Skin Black Orchid Scent', 60)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Lux Body Wash Fragrant Skin Black Orchid Scent', 60)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/LUX LAVENDER & VITAMIN C SHIMMMERING BODYWASH 400ml.jpg" alt="LUX LAVENDER & VITAMIN C SHIMMMERING BODYWASH 400ml">
+                <div class="info">
+                    <h2>LUX LAVENDER & VITAMIN C SHIMMMERING BODYWASH 400ml</h2>
+                    <p>₹99</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'LUX LAVENDER & VITAMIN C SHIMMMERING BODYWASH 400ml', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('LUX LAVENDER & VITAMIN C SHIMMMERING BODYWASH 400ml', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Mysore Sandal Soap,450g.jpg" alt="Mysore Sandal Soap,450g">
+                <div class="info">
+                    <h2> Mysore Sandal Soap,450g</h2>
+                    <p>₹134</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Mysore Sandal Soap,450g', 160)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Mysore Sandal Soap,450g', 160)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/NIVEA Fresh Power Fruit 250ml Body Wash.jpg" alt="NIVEA Fresh Power Fruit 250ml Body Wash">
+                <div class="info">
+                    <h2>NIVEA Fresh Power Fruit 250ml Body Wash</h2>
+                    <p>₹260</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'NIVEA Fresh Power Fruit 250ml Body Wash', 50)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('NIVEA Fresh Power Fruit 250ml Body Wash', 50)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/NIVEA Men Body Wash.jpg" alt="NIVEA Men Body Wash">
+                <div class="info">
+                    <h2>NIVEA Men Body Wash</h2>
+                    <p>₹1230</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'NIVEA Men Body Wash', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('NIVEA Men Body Wash', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Palmolive Aroma Absolute Relax Body Wash for Women & Men, 750ml.jpg" alt="Palmolive Aroma Absolute Relax Body Wash for Women & Men, 750ml.">
+                <div class="info">
+                    <h2>Palmolive Aroma Absolute Relax Body Wash for Women & Men, 750ml.</h2>
+                    <p>₹120</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Palmolive Aroma Absolute Relax Body Wash for Women & Men, 750ml.', 250)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Palmolive Aroma Absolute Relax Body Wash for Women & Men, 750ml.', 250)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Pears Pure & Gentle Soap Bar.jpg" alt="Pears Pure & Gentle Soap Bar">
+                <div class="info">
+                    <h2>Pears Pure & Gentle Soap Bar</h2>
+                    <p>₹120 </p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Pears Pure & Gentle Soap Bar', 120)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Pears Pure & Gentle Soap Bar', 120)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Pears Soft & Fresh Shower Gel.jpg" alt="Pears Soft & Fresh Shower Gel">
+                <div class="info">
+                    <h2>Pears Soft & Fresh Shower Gel</h2>
+                    <p>₹210 </p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Pears Soft & Fresh Shower Gel', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Pears Soft & Fresh Shower Gel', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Santoor Skin Moisturizing Sandal.jpg" alt="Santoor Skin Moisturizing Sandal">
+                <div class="info">
+                    <h2>Santoor Skin Moisturizing Sandal</h2>
+                    <p>₹180</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Santoor Skin Moisturizing Sandal', 85)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Santoor Skin Moisturizing Sandal', 85)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Sensodyne Toothpaste Fresh Gel Combo pack.jpg" alt="Sensodyne Toothpaste Fresh Gel Combo pack">
+                <div class="info">
+                    <h2>Sensodyne Toothpaste Fresh Gel Combo pack</h2>
+                    <p>₹129</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Sensodyne Toothpaste Fresh Gel Combo pack', 100)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Sensodyne Toothpaste Fresh Gel Combo pack', 100)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Tresemme Hair Fall Defence Shampoo 1 Ltr.jpg" alt="Tresemme Hair Fall Defence Shampoo 1 L">
+                <div class="info">
+                    <h2>Tresemme Hair Fall Defence Shampoo 1 L</h2>
+                    <p>₹320</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Tresemme Hair Fall Defence Shampoo 1 L', 80)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Tresemme Hair Fall Defence Shampoo 1 L', 80)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Vivel Aloe Vera.jpg" alt="ivel Aloe Vera">
+                <div class="info">
+                    <h2>ivel Aloe Vera</h2>
+                    <p>₹340per kg</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'ivel Aloe Vera', 70)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('ivel Aloe Vera', 70)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/self/Yardley London English Lavender Luxury Soap.jpg" alt="Yardley London English Lavender Luxury Soap">
+                <div class="info">
+                    <h2>Yardley London English Lavender Luxury Soap</h2>
+                    <p>₹120</p>
+                    <div class="actions">
+                        <span class="heart" onclick="toggleHeart(this, 'Yardley London English Lavender Luxury Soap', 60)">&#x2764;</span>
+                        <span class="cart" onclick="addToCart('Yardley London English Lavender Luxury Soap', 60)">&#128722;</span>
+                    </div>
+                </div>
+            </div>
+            
+             
+        </div>
+    </div>
+   
+
+    <div class="container hidden" id="wishlistPage">
+        <h1>Wishlist</h1>
+        <div class="items" id="wishlistItems">
+            <!-- Wishlist items will be added here -->
+        </div>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <div class="container hidden" id="cartPage">
+        <h1>Cart</h1>
+        <div class="items" id="cartItems">
+            <!-- Cart items will be added here -->
+        </div>
+        <div id="userDetails" class="hidden">
+            <h2>Enter your details</h2>
+            <form onsubmit="confirmOrder(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" required onchange="toggleUPI(this.value)">
+                    <option value="">Select Payment Method</option>
+                    <option value="online">Online Payment</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+                <div id="upiSection" class="hidden">
+                    <label for="upiId">UPI ID:</label>
+                    <input type="text" id="upiId" name="upiId">
+                </div>
+                <button type="submit">Confirm Order</button>
+            </form>
+        </div>
+        <div id="billDetails" class="hidden">
+            <h2>Bill Details</h2>
+            <p id="totalBill">Total Bill: ₹0</p>
+        </div>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <div class="container hidden" id="orderConfirmationPage">
+        <h1>Order Confirmation</h1>
+        <p id="orderSummary">Your order has been placed successfully.</p>
+        <p>Thank you for shopping with Grand Grocer!</p>
+        <p style="text-align:center;">Visit Again!</p>
+    </div>
+
+    <script>
+        const wishlist = [];
+        const cart = [];
+        let totalBill = 0;
+
+        function toggleHeart(element, itemName, price) {
+            element.classList.toggle('favorite');
+            if (element.classList.contains('favorite')) {
+                wishlist.push({ name: itemName, price: price });
+            } else {
+                const index = wishlist.findIndex(item => item.name === itemName);
+                if (index !== -1) wishlist.splice(index, 1);
+            }
+            updateWishlist();
+        }
+
+        function addToCart(itemName, price) {
+            const quantity = prompt(`Enter quantity for ${itemName} (in kg):`, 1);
+            if (quantity !== null && quantity > 0) {
+                alert(`${quantity} kg of ${itemName} added to cart!`);
+                cart.push({ name: itemName, price: price, quantity: quantity });
+                updateCart();
+            }
+        }
+
+        function updateWishlist() {
+            const wishlistItems = document.getElementById('wishlistItems');
+            wishlistItems.innerHTML = '';
+            wishlist.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'item';
+                div.innerHTML = `<h2>${item.name}</h2><p>₹${item.price} per kg</p>`;
+                wishlistItems.appendChild(div);
+            });
+        }
+
+        function updateCart() {
+            const cartItems = document.getElementById('cartItems');
+            cartItems.innerHTML = '';
+            totalBill = 0;
+            cart.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'item';
+                div.innerHTML = `<h2>${item.name}</h2><p>₹${item.price} per kg</p><p>Quantity: ${item.quantity} kg</p>`;
+                cartItems.appendChild(div);
+                totalBill += item.price * item.quantity;
+            });
+            document.getElementById('totalBill').innerText = `Total Bill: ₹${totalBill}`;
+            document.getElementById('billDetails').classList.remove('hidden');
+            document.getElementById('userDetails').classList.remove('hidden');
+        }
+
+        function goBack() {
+            document.getElementById('wishlistPage').classList.add('hidden');
+            document.getElementById('cartPage').classList.add('hidden');
+            document.getElementById('itemsPage').classList.remove('hidden');
+            document.getElementById('orderConfirmationPage').classList.add('hidden');
+        }
+
+        function toggleUPI(paymentMethod) {
+            if (paymentMethod === 'online') {
+                document.getElementById('upiSection').classList.remove('hidden');
+            } else {
+                document.getElementById('upiSection').classList.add('hidden');
+            }
+        }
+
+        function confirmOrder(event) {
+            event.preventDefault();
+            const name = event.target.name.value;
+            const address = event.target.address.value;
+            const paymentMethod = event.target.paymentMethod.value;
+            const upiId = event.target.upiId ? event.target.upiId.value : '';
+
+            let finalBill = totalBill;
+            if (paymentMethod === 'cod') {
+                finalBill += 40; // Adding ₹40 for Cash on Delivery
+            }
+
+            let paymentConfirmation = '';
+            if (paymentMethod === 'online' && upiId) {
+                paymentConfirmation = 'Paid successfully using UPI ID: ' + upiId;
+            } else {
+                paymentConfirmation = 'Cash on Delivery';
+            }
+
+            alert(`Order confirmed! Name: ${name}, Address: ${address}. ${paymentConfirmation}. Total Bill: ₹${finalBill}. Expected delivery in 2 hours.`);
+            document.getElementById('orderSummary').innerText = `Order confirmed! Name: ${name}, Address: ${address}. ${paymentConfirmation}. Total Bill: ₹${finalBill}. Expected delivery in 2 hours.`;
+            document.getElementById('orderConfirmationPage').classList.remove('hidden');
+            document.getElementById('cartPage').classList.add('hidden');
+        }
+
+        document.querySelector('.wishlist').addEventListener('click', () => {
+            document.getElementById('wishlistPage').classList.remove('hidden');
+            document.getElementById('itemsPage').classList.add('hidden');
+            document.getElementById('cartPage').classList.add('hidden');
+        });
+
+        document.querySelector('.cart').addEventListener('click', () => {
+            document.getElementById('cartPage').classList.remove('hidden');
+            document.getElementById('itemsPage').classList.add('hidden');
+            document.getElementById('wishlistPage').classList.add('hidden');
+        });
+    </script>
+</body>
+
+</html>
